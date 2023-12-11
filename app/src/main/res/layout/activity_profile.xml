@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.ProfileActivity"
+    android:background="@color/white"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:paddingEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_centerVertical="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_row_left"
+                />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/logo_things"
+                />
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="20dp"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                app:cardCornerRadius="500dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/main"
+                    >
+                    <ImageView
+                        android:id="@+id/imgUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <LinearLayout
+                android:id="@+id/identitas"
+                android:layout_below="@+id/card"
+                android:layout_marginTop="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Username"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/addUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_strock"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:hint="addUsername"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/addEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_strock"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:hint="addUsername"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="No. Handphone"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@+id/addHp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_strock"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:hint="addUsername"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:text="Alamat"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck" />
+
+                <EditText
+                    android:id="@id/addAlamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_strock"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:hint="addUsername"
+                    android:paddingHorizontal="20dp"
+                    android:paddingVertical="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    tools:ignore="TextSizeCheck,TouchTargetSizeCheck" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btnChangePP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="suting profil"
+                android:textColor="@color/btn3"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/btnSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/identitas"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/btn_fill2"
+                android:fontFamily="@font/poppinsmedium"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:text="Simpan"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                tools:ignore="TextSizeCheck" />
+
+            <TextView
+                android:id="@+id/btnLogout"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/identitas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keluar"
+                android:fontFamily="@font/poppinsmedium"
+                android:textColor="@color/black"
+                android:textSize="12dp"
+                android:background="@drawable/btn_fill"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

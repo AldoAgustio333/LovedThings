@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.KategoriActivity"
+    android:background="@color/white"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:paddingEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_centerVertical="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_row_left"
+                />
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/btnBack"
+                android:layout_marginLeft="20dp"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@drawable/logo_things"
+                />
+
+            <ImageView
+                android:id="@+id/btnSearch"
+                android:layout_alignParentEnd="true"
+                android:layout_toStartOf="@+id/btnChat"
+                android:layout_centerVertical="true"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/ic_search"
+                android:layout_marginRight="15dp"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <TextView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kategori"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="12dp"
+        android:textColor="@color/black"
+        android:background="@color/main"
+        android:paddingHorizontal="20dp"
+        android:paddingVertical="5dp"
+        />
+    <ScrollView
+        android:layout_below="@+id/txtHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/awal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <RelativeLayout
+                android:id="@+id/iklan"
+                android:layout_below="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <RelativeLayout
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/tamplate1"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wanita"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+
+                        />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recKategoriWanita"
+                    android:layout_below="@+id/tamplate1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/tamplate2"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/recKategoriWanita"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pria"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+
+                        />
+
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recKategoriPria"
+                    android:layout_below="@+id/tamplate2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/recKategoriPria"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

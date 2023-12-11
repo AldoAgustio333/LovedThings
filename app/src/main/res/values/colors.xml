@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main">#E1DCD0</color>
+    <color name="btn1">#D3BB9F</color>
+    <color name="btn2">#E1DCD0</color>
+    <color name="btn3">#016C90</color>
+    <color name="bottomitem">#CDC5B1</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="birudana">#108DE9</color>
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.DaftarProduk"
+    android:background="@color/white"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="20dp"
+        >
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+            android:background="@color/white"
+            >
+
+            <RelativeLayout
+                android:paddingEnd="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+                    android:id="@+id/btnBack"
+                    android:layout_centerVertical="true"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="@drawable/ic_row_left"
+                    />
+                <ImageView
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/logo_things"
+                    />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <HorizontalScrollView
+            android:id="@+id/menuKategori"
+            android:layout_below="@+id/toolbar"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fadeScrollbars="false"
+            android:scrollbars="horizontal"
+            >
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="10dp"
+                >
+                <TextView
+                    android:id="@+id/txtAll"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:layout_toEndOf="@+id/txtAll"
+                    android:id="@+id/txtAtasanCW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atasan Wanita"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txtBawahanCW"
+                    android:layout_toEndOf="@+id/txtAtasanCW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bawahan Wanita"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txtSepatu"
+                    android:layout_toEndOf="@+id/txtBawahanCW"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sepatu/Sandal Wanita"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txtTasCW"
+                    android:layout_toEndOf="@+id/txtSepatu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tas Wanita"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txtAksesorisCW"
+                    android:layout_toEndOf="@+id/txtSepatu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aksesoris Wanita"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:layout_toEndOf="@+id/txtAksesorisCW"
+                    android:id="@+id/txtAtasanCowo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Atasan Pria"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txtBawahanCowo"
+                    android:layout_toEndOf="@+id/txtAtasanCowo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bawahan Pria"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txtSepatuPria"
+                    android:layout_toEndOf="@+id/txtBawahanCowo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sepatu/Sandal Pria"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txtTasCowo"
+                    android:layout_toEndOf="@+id/txtSepatuPria"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tas Pria"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+                <TextView
+                    android:id="@+id/txtAksesorisCowo"
+                    android:layout_toEndOf="@+id/txtTasCowo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Aksesoris Pria"
+                    android:textColor="@color/black"
+                    android:textSize="12dp"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:background="@drawable/btn_fill2"
+                    android:paddingVertical="5dp"
+                    android:paddingHorizontal="10dp"
+                    android:textAlignment="center"
+                    android:layout_marginHorizontal="5dp"
+                    />
+            </RelativeLayout>
+
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerProduk"
+            android:layout_below="@+id/menuKategori"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/item_barang2"
+            />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

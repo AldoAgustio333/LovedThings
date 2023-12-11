@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "250692950953",
+    "project_id": "things-ea9fd",
+    "storage_bucket": "things-ea9fd.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250692950953:android:2e3f8c8e67aa043433c2b8",
+        "android_client_info": {
+          "package_name": "com.example.things"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDUmLwBVoEJAEa4QHPImAhb-zqqPkxND50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

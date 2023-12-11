@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment.Dashboard">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/awal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:layout_marginTop="20dp"
+                android:id="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                />
+
+            <RelativeLayout
+                android:id="@+id/iklan"
+                android:layout_below="@+id/image_slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="20dp"
+                >
+
+                <RelativeLayout
+                    android:id="@+id/tamplate1"
+                    android:layout_marginTop="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wanita"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/btnAllKategoriWanita"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat lainnya"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textSize="12dp"
+                        android:textColor="@color/btn3"
+                        android:layout_toStartOf="@+id/panah"
+                        android:layout_centerInParent="true"
+                        />
+                    <ImageView
+                        android:id="@+id/panah"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_btnright"
+                        />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recKategoriWanita"
+                    android:layout_below="@+id/tamplate1"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    />
+
+                <RelativeLayout
+                    android:id="@+id/tamplate2"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/recKategoriWanita"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+
+                    >
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pria"
+                        android:fontFamily="@font/poppinsbold"
+                        android:textSize="12dp"
+                        android:textColor="@color/black"
+
+                        />
+                    <TextView
+                        android:id="@+id/btnAllKategoriPria"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat lainnya"
+                        android:fontFamily="@font/poppinsmedium"
+                        android:textSize="12dp"
+                        android:textColor="@color/btn3"
+                        android:layout_toStartOf="@+id/panah2"
+                        android:layout_centerInParent="true"
+                        />
+                    <ImageView
+                        android:id="@+id/panah2"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_btnright"
+                        />
+                </RelativeLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recKategoriPria"
+                    android:layout_below="@+id/tamplate2"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_below="@+id/recKategoriPria"
+                    />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>

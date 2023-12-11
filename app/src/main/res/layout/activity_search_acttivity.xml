@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.SearchActtivity"
+    android:background="@color/white"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:layout_marginTop="10dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_scrollFlags="scroll|enterAlways"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.ActionBar"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:paddingEnd="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_centerVertical="true"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_row_left"
+                />
+            <EditText
+                android:id="@+id/addSearch"
+                android:layout_marginLeft="10dp"
+                android:layout_toEndOf="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Cari"
+                android:fontFamily="@font/poppinsregular"
+                android:textSize="12dp"
+                android:textColor="@color/black"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="5dp"
+                android:drawablePadding="13dp"
+                android:background="@drawable/btn_fill2"
+                android:drawableStart="@drawable/ic_search"
+                android:singleLine="true"
+                />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recSearch"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/recSearch"
+        />
+
+</RelativeLayout>
